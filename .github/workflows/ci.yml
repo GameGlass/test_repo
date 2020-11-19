@@ -33,3 +33,7 @@ jobs:
           echo test, and deploy your project
       - name: GitHub Deployments
         uses: bobheadxi/deployments@v0.4.2
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: production
